@@ -1,0 +1,144 @@
+
+/*inicio*/
+.container{
+    div{
+        
+    .container-info{
+       
+        .info-principal{
+            
+            h1{
+                font-family: var(--letra-titulo);
+                color: var(--color-adicional);
+                font-weight: bold;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            p{
+                text-align: justify;
+
+            }
+            }
+
+        .info-secundaria{
+            h2{
+                font-family: var(--letra-titulo);
+                color: var(--color-adicional);
+                font-weight: 400;
+
+            }
+            img{
+                border-radius: 20px;
+                border: darken($color: #000000, $amount: 0);
+                margin: 20px auto;
+
+                @include tablet{
+                    width: 100%;
+                }
+            }
+
+            p{
+                text-align: justify;
+            }
+            }
+
+    }
+}
+}
+
+/*fin inicio*/
+
+/*tienda*/
+.container{
+    h1{
+        font-family: var(--letra-titulo);
+        color: var(--color-adicional);
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: center;
+    }
+    p{
+        text-align: justify;
+        span{
+            color: var(--color-adicional);
+            font-weight:bold;
+        }
+    }
+
+    h2{
+        font-family: var(--letra-titulo);
+        color: var(--color-adicional);
+        font-weight: 400;
+    }
+    ul{
+
+        li{
+            list-style: none;
+            color: blue;
+            font-weight: bold;
+            span{
+                color: var(--color-adicional);
+                font-weight:bold;
+            }
+
+        }
+    }
+
+    img{
+        border-radius: 20px;
+        border: darken($color: #000000, $amount: 0);
+        margin: 20px auto;
+
+        @include tablet{
+            width: 100%;
+        }
+    }
+}
+/*fin nosotros*/
+
+/*Productos*/
+.container{
+    .info{
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+
+        @include tablet{
+            flex-direction: column;    
+        }
+        .text{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            @include tablet{
+                width: 100%; 
+            }
+
+            h3{
+                font-family: var(--letra-titulo);
+                color: var(--color-adicional);
+                font-weight: 500;
+                margin-top: 15px;
+            }
+
+            p{
+                color:rgb(73, 7, 72);
+
+            }
+            
+        }
+
+        img{
+            width: 60%;
+            @include tablet{
+                width: 90%; 
+                margin: 0 auto;
+            }
+        }
+    }
+}
+/*fin Productos*/
